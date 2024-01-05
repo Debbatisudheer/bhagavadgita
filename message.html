@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divine Message</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            position: relative; /* Add relative positioning to the body */
+        }
+
+        img {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        #message-container {
+            position: absolute;
+            bottom: 50%; /* Adjust the distance from the bottom */
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            background-color: transparent; /* Make the container transparent */
+            padding: 6px; /* Adjust the padding as needed */
+            border: 2px solid white; /* Add a border to the text */
+            border-radius: 10px; /* Add rounded corners */
+            animation: glow 2s infinite; /* Add the glow animation */
+        }
+
+        #message {
+            display: inline-block;
+            font-size: 50px; /* Set the font size to a positive value */
+            color: white;
+            margin: 0; /* Remove default margin of the paragraph */
+        }
+
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.8);
+            }
+            50% {
+                box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.8);
+            }
+            100% {
+                box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.8);
+            }
+        }
+
+        #bottom-text {
+            position: absolute;
+            top: 850px;
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="krishna9.jpg" alt="Description of the image">
+    <div id="message-container">
+        <p id="message">Krishna always loves you</p>
+    </div>
+    <div id="bottom-text">@sudheer debbati</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
